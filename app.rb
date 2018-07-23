@@ -35,7 +35,15 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     binding.pry
-    
+    if @operation == "add"
+      @number1.send('+'), @number2)
+    elsif @operation == "subtract"
+      @number1.send('-', @number2)
+    elsif @operation == "multiply"
+      @number1.send('*', @number2)
+    elsif @operation == "divide"
+      @number1.send('/', @number2)
+    end
 
   end
 end
