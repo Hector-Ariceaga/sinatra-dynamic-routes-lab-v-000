@@ -44,6 +44,6 @@ class App < Sinatra::Base
     elsif @operation == "divide"
       @number1.send ('/', @number2)
     end
-    
+
   end
 end
