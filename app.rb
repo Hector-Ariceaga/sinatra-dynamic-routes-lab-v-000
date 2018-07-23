@@ -18,8 +18,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     i = 0
     while i < @number
-      binding.pry
-      "#{@phrase}"
+      puts "#{@phrase}"
       i += 1
     end
   end
