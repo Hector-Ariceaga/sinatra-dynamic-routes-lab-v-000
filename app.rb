@@ -35,7 +35,7 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
 
-    render status: 200
+    status: 200
     if @operation == "add"
       @number1.send('+', @number2)
     elsif @operation == "subtract"
