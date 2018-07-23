@@ -36,7 +36,7 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     binding.pry
     if @operation == "add"
-      @number1.send('+'), @number2)
+      @number1.send(+, @number2)
     elsif @operation == "subtract"
       @number1.send('-', @number2)
     elsif @operation == "multiply"
